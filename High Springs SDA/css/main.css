@@ -1,0 +1,10 @@
+.w-text {
+  line-height: 2;
+}
+
+.footer {
+  padding: 10px 0 10px;
+  border-top: 1px rgba(236, 238, 239, 1);
+  background-color: rgba(236, 238, 239, 0.2);
+  line-height: 1;
+}

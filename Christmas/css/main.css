@@ -1,0 +1,143 @@
+/*
+  Christmas
+  Copyright Luke Bartholomew 2017
+
+  Table of Contents:
+    - Elements
+      - Header
+      - Container
+      - Footer
+    - Typography
+    - Responsive Styles
+*/
+
+/*
+============
+ ==========
+  Elements
+ ==========
+============
+*/
+
+/*
+ ========
+  Header
+ ========
+*/
+
+div.header {
+  margin: 0 0 30px 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.315) ,rgba(0, 0, 0, 0.315)), url('../img/tree_ornaments.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /*padding: 100px;*/
+  padding: 20vh;
+  color: white;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+div.header header ul {
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*
+ ===========
+  Container
+ ===========
+*/
+
+div.container {
+  padding: 0 5px;
+}
+
+div.container section {
+  margin-bottom: 2em;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(38, 12, 12, 0.2);
+}
+
+div.container h2 {
+  font-size: 1.75em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  margin-bottom: .625em;
+}
+
+div.container p {
+  font-family: Helvetica;
+  font-size: 1em;
+  text-align: center;
+  line-height: 2;
+}
+
+/*
+ ========
+  Footer
+ ========
+*/
+
+footer {
+  text-align: center;
+  color: rgba(38, 12, 12, 0.9);
+  margin-bottom: 1em;
+}
+
+/*
+==============
+ ============
+  Typography
+ ============
+==============
+*/
+
+div.header header h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  margin-bottom: .5em;
+  font-weight: 300;
+}
+
+
+div.container h2 {
+  font-size: 1.75em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  margin-bottom: .625em;
+}
+
+/*
+==================
+  ==============
+    Responsive
+  ==============
+=================
+*/
+
+@media screen and (min-width:661px) {
+  div.header header ul li  a:hover {
+    color: #ccc;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  div.header header ul {
+   flex-direction: column;
+ }
+
+ div.header ul li {
+   margin-bottom: 1em;
+
+    /*Button Styles
+   border: 1px solid white;
+   border-radius: 5px;
+   background-color: white;
+   color: black;
+   padding: 10px 0;*/
+
+ }
+}

@@ -1,0 +1,68 @@
+/*
+  Coffee Hero
+    (C) 2017 Luke S. Bartholomew
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+div.header {
+  margin: 0;
+  height: 50vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.315) ,rgba(0, 0, 0, 0.315)), url('../img/coffee.jpg');
+  background-size: cover;
+  box-sizing: border-box;
+  margin-bottom: .625em;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
+}
+
+div.header a {
+  color: white;
+}
+
+div.header a:hover {
+  color: #ccc;
+}
+
+header#heading {
+  color: white;
+  padding-top: 1.5em;
+}
+
+#heading span {
+  float: left;
+  width: 55%;
+  margin-left: 5%;
+}
+
+ul.nav {
+  width: 35%;
+  display: flex;
+  justify-content: space-around;
+  align-content: flex-end;
+  margin-right: 20px;
+}
+
+.s-heading {
+  font-size: 1.15em;
+}
+
+section {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  margin-bottom: 10px;
+}
+
+section:nth-child(4) {
+  border-bottom: none;
+}
+
+@media screen and (min-width: 700px) {
+  #heading span {
+    width: 65%;
+  }
+  ul.nav {
+    width: 25%;
+  }
+}
